@@ -1,5 +1,8 @@
 .app.light {
   --bg-color: #ffffff;
+  --bg-color-inverted: #121212;
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --navbar-color: var(--primary-color);
   --primary-color: #6200ee;
   --secondary-color: #03dac6;
 }
