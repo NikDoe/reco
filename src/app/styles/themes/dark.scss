@@ -1,8 +1,9 @@
 .app.dark {
-  --bg-color: #121212;
+  --bg-color: #101010;
   --bg-color-inverted: #ffffff;
-  --surface-color: rgba(255, 255, 255, 0.05);
-  --navbar-color: var(--surface-color);
-  --primary-color: #bb86fc;
-  --secondary-color: #03dac6;
+  --surface-color-01dp: rgba(255, 255, 255, 0.05);
+  --surface-color-02dp: rgba(255, 255, 255, 0.07);
+  --surface-color-03dp: rgba(255, 255, 255, 0.08);
+  --primary-color: #0067ff;
+  --secondary-color: #2e692e;
 }
