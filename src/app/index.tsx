@@ -2,6 +2,7 @@ import { classNames } from "shared/lib/classNames/classNames";
 import { useTheme } from "./providers/ThemeProvider";
 import { AppRouter } from "./providers/router";
 import { Header } from "widgets/Header";
+import { Button } from "shared/ui/Button";
 
 import "./styles/index.scss";
 
@@ -10,7 +11,7 @@ const App = () => {
 
   return (
     <div className={classNames("app", {}, [theme])}>
-      <button onClick={toogleTheme}>тема</button>
+      <Button onClick={toogleTheme}>тема</Button>
       <Header />
       <AppRouter />
     </div>
