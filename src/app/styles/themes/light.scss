@@ -1,10 +1,16 @@
 .app.light {
   --bg-color: #f4f3f4;
   --bg-color-inverted: #101010;
+
   --surface-color-01dp: #ffffff;
   --surface-color-02dp: #f7f8f7;
   --surface-color-03dp: #e9eaf2;
+
   --primary-color: #ff9047;
   --primary-color-l: #f4e2b8;
   --secondary-color: #9cc3f7;
+
+  --font-color-h: rgba(16, 16, 16, 0.87);
+  --font-color-m: rgba(16, 16, 16, 0.6);
+  --font-color-disabled: rgba(16, 16, 16, 0.33);
 }
