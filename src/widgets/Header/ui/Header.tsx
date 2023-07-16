@@ -1,16 +1,16 @@
-import { classNames } from "shared/lib/classNames/classNames";
-import { Navbar } from "widgets/Navbar";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Navbar } from 'widgets/Navbar';
 
-import styles from "./Header.module.scss";
+import styles from './Header.module.scss';
 
 interface HeaderProps {
   className?: string;
 }
 
 export const Header = ({ className }: HeaderProps) => {
-  return (
-    <header className={classNames(styles.Header, {}, [className])}>
-      <Navbar />
-    </header>
-  );
+    return (
+        <header className={classNames(styles.Header, {}, [className])}>
+            <Navbar />
+        </header>
+    );
 };
