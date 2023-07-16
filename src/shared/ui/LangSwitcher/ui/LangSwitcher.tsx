@@ -9,7 +9,7 @@ interface LangSwitcherProps {
 }
 
 export const LangSwitcher = ({ className }: LangSwitcherProps) => {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const toogleLanguage = () => {
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
@@ -20,7 +20,7 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
             className={classNames(styles.LangSwitcher, {}, [className])}
             onClick={toogleLanguage}
         >
-      Язык
+            {t('Язык')}
         </Button>
     );
 };
