@@ -17,7 +17,9 @@ const App = () => {
                 <ThemeSwitcher />
                 <LangSwitcher />
                 <Header />
-                <AppRouter />
+                <div className='page-content'>
+                    <AppRouter />
+                </div>
             </Suspense>
         </div>
     );
