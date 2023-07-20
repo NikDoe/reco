@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from 'shared/lib/classNames';
 import { AppLink } from 'shared/ui/AppLink';
 import { useTranslation } from 'react-i18next';
 
