@@ -4,7 +4,7 @@ import App from 'app';
 import { ThemeProvider } from 'app/providers/ThemeProvider';
 import { ErrorBoundary } from 'app/providers/ErrorBoundary';
 
-import './shared/config/i18n';
+import './shared/config/i18n/i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
