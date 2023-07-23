@@ -14,8 +14,10 @@ const App = () => {
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback=''>
-                <ThemeSwitcher />
-                <LangSwitcher />
+                <div>
+                    <ThemeSwitcher />
+                    <LangSwitcher />
+                </div>
                 <Header />
                 <div className='page-content'>
                     <AppRouter />

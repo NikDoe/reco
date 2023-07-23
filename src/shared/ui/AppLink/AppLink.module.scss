@@ -1,12 +1,30 @@
 .AppLink {
+    display: inline-flex;
     text-decoration: none;
     margin-left: 20px;
+    border-radius: 24px;
+    color: var(--font-color-h);
+    background: var(--bg-color-link);
+    transition: all .2s ease-in;
+
+    &:hover {
+        background: var(--bg-color-link-active);
+    }
 }
 
-.primary {
+.text {
+    padding: 10px 20px;
     color: var(--font-color-h);
 }
 
-.secondary {
-    color: chartreuse;
+.icon {
+    padding: 10px;
+    border-radius: 50%;
+    color: none;
+
+    svg {
+        path {
+            fill: var(--font-color-h);
+        }
+    }
 }
