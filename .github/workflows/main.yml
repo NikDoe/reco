@@ -18,16 +18,16 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: install modules
-        run: yarn install
+        run: pnpm install
       - name: build production project
-        run: yarn run build:prod
+        run: pnpm run build:prod
       - name: linting typescript
-        run: yarn run lint:ts
+        run: pnpm run lint:ts
       - name: linting css
-        run: yarn run lint:scss
+        run: pnpm run lint:scss
       - name: unit testing
-        run: yarn run test:unit
+        run: pnpm run test:unit
       - name: build storybook
-        run: yarn run storybook:build
+        run: pnpm run storybook:build
       - name: screenshot testing
-        run: yarn run test:ui:ci
+        run: pnpm run test:ui:ci
