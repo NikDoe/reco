@@ -24,14 +24,10 @@ export function buildPlugins({ paths, isDev }: BuildOptions): WebpackPluginInsta
         new DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
         }),
-        new ReactRefreshWebpackPlugin(),
-        new HotModuleReplacementPlugin(),
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false,
-        })
     ];
 
     if(isDev) {
+        plugins.push(new ReactRefreshWebpackPlugin());
         plugins.push(new HotModuleReplacementPlugin());
         plugins.push(new BundleAnalyzerPlugin({
             openAnalyzer: false,
