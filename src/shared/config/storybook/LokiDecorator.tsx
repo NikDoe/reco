@@ -1,4 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
 import createAsyncCallback from '@loki/create-async-callback';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
 import isLokiRunning from '@loki/is-loki-running';
 import { StoryFn } from '@storybook/react';
 import { useEffect } from 'react';
