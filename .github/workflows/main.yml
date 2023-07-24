@@ -16,7 +16,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1
         with:
-          version: "7.x"
+          version: "6.x"
       - name: Staring Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
