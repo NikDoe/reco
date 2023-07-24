@@ -9,7 +9,10 @@ interface HeaderProps {
 
 export const Header = ({ className }: HeaderProps) => {
     return (
-        <header className={classNames(styles.Header, {}, [className])}>
+        <header
+            data-testid='header'
+            className={classNames(styles.Header, {}, [className])}
+        >
             <Navbar />
         </header>
     );
