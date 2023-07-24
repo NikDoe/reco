@@ -13,7 +13,6 @@
         "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
         "test:unit": "jest --config ./config/jest/jest.config.ts",
         "test:ui": "loki test",
-        "test:ui:ci": "concurrently -s first -k \"npm run storybook\" \"npm run test:ui\"",
         "test:ui:ok": "loki approve",
         "storybook": "storybook dev -p 6006 -c ./config/storybook",
         "storybook:build": "storybook build -c ./config/storybook"
@@ -59,7 +58,6 @@
         "@typescript-eslint/eslint-plugin": "^6.0.0",
         "@typescript-eslint/parser": "^6.0.0",
         "babel-jest": "^29.6.1",
-        "concurrently": "^8.2.0",
         "css-loader": "^6.8.1",
         "eslint": "^8.45.0",
         "eslint-plugin-i18next": "^6.0.3",
