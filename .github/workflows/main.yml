@@ -31,5 +31,7 @@ jobs:
         run: pnpm run lint:scss
       - name: unit testing
         run: pnpm run test:unit
+      - name: build storybook
+        run: pnpm run storybook:build
       - name: screenshot testing
         run: pnpm run test:ui:ci
