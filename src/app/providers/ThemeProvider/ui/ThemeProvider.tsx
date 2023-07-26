@@ -7,13 +7,18 @@ import {
 
 type Props = {
   children: React.ReactNode;
+  initialTheme?: Theme;
 };
 
-export const ThemeProvider: FC<Props> = ({ children }) => {
-    const defaultTheme =
-    (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
+const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme;
 
-    const [theme, setTheme] = useState<Theme>(defaultTheme);
+export const ThemeProvider: FC<Props> = (props) => {
+    const {
+        children,
+        initialTheme
+    } = props;
+
+    const [theme, setTheme] = useState<Theme>(initialTheme || defaultTheme || Theme.LIGHT);
 
     const defaultValue = useMemo(
         () => ({

@@ -8,6 +8,7 @@ export enum ButtonTheme {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
   BORDERED = 'bordered',
+  ROUNDED = 'rounded',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

@@ -4,6 +4,8 @@ import { Button, ButtonTheme } from './Button';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 
+import Icon from 'shared/assets/icons/auth.svg';
+
 const meta = {
     title: 'shared/Button',
     component: Button,
@@ -72,3 +74,18 @@ export const BorderedDark: Story = {
     },
 };
 BorderedDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const Rounded: Story = {
+    args: {
+        children: <Icon />,
+        theme: ButtonTheme.ROUNDED
+    },
+};
+
+export const RoundedDark: Story = {
+    args: {
+        children: <Icon />,
+        theme: ButtonTheme.ROUNDED
+    },
+};
+RoundedDark.decorators = [ThemeDecorator(Theme.DARK)];

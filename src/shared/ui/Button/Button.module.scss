@@ -12,12 +12,21 @@
         width: var(--icon-size);
         height: var(--icon-size);
         fill: var(--font-color-h);
+        transition: all .2s ease-in;
     }
 }
 
 .clear {
     color: var(--font-color-h);
     background: var(--surface-color-01dp);
+
+    svg {
+        fill: var(--font-color-m);
+
+        &:hover {
+            fill: var(--font-color-h);
+        }
+    }
 }
 
 .primary {
@@ -32,4 +41,9 @@
     background: none;
     border: 2px solid var(--font-color-disabled);
     color: var(--font-color-h);
+}
+
+.rounded {
+    padding: 0;
+    background: none;
 }
