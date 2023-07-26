@@ -4,8 +4,6 @@ import { Button } from 'shared/ui/Button';
 import { Theme, useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames';
 
-import styles from './ThemeSwitcher.module.scss';
-
 interface ThemeSwitcherProps {
     className?: string;
 }
@@ -14,7 +12,7 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
     const { theme, toogleTheme } = useTheme();
 
     return (
-        <Button className={classNames(styles.ThemeSwitcher, {}, [className])} onClick={toogleTheme}>
+        <Button className={classNames('', {}, [className])} onClick={toogleTheme}>
             {theme === Theme.DARK ? <LightIcon/> : <DarcIcon/>}
         </Button>
     );

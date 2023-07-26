@@ -7,6 +7,12 @@
     color: var(--font-color-btn);
     display: inline-flex;
     align-items: center;
+
+    svg {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        fill: var(--font-color-h);
+    }
 }
 
 .clear {
