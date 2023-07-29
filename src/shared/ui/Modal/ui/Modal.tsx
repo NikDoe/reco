@@ -1,9 +1,9 @@
 import { FC, ReactNode, useCallback, useEffect } from 'react';
-import { classNames } from 'shared/lib/classNames';
-import { Portal } from 'shared/ui/Portal';
-import { useTheme } from 'app/providers/ThemeProvider';
-import { Button } from 'shared/ui/Button';
-import { ButtonTheme } from 'shared/ui/Button/Button';
+import { classNames } from '@/shared/lib/classNames';
+import { Portal } from '@/shared/ui/Portal';
+import { useTheme } from '@/app/providers/ThemeProvider';
+import { Button } from '@/shared/ui/Button';
+import { ButtonTheme } from '@/shared/ui/Button/Button';
 
 import CloseIcon from 'shared/assets/icons/close-btn.svg';
 

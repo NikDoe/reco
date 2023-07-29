@@ -1,5 +1,5 @@
-import { classNames } from 'shared/lib/classNames';
-import { Button } from 'shared/ui/Button';
+import { classNames } from '@/shared/lib/classNames';
+import { Button } from '@/shared/ui/Button';
 import { useTranslation } from 'react-i18next';
 
 import styles from './LangSwitcher.module.scss';

@@ -1,9 +1,9 @@
-import { classNames } from 'shared/lib/classNames';
-import { Navbar } from 'widgets/Navbar';
+import { classNames } from '@/shared/lib/classNames';
+import { Navbar } from '@/widgets/Navbar';
 import { useCallback, useState } from 'react';
-import { Button } from 'shared/ui/Button';
-import { Modal } from 'shared/ui/Modal';
-import { ButtonTheme } from 'shared/ui/Button/Button';
+import { Button } from '@/shared/ui/Button';
+import { Modal } from '@/shared/ui/Modal';
+import { ButtonTheme } from '@/shared/ui/Button/Button';
 
 import AuthIcon from 'shared/assets/icons/auth.svg';
 

@@ -1,8 +1,8 @@
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from '@/shared/lib/classNames';
+import { useTranslation } from 'react-i18next';
+import { Button } from '@/shared/ui/Button';
 
 import styles from './ErrorFallback.module.scss';
-import { useTranslation } from 'react-i18next';
-import { Button } from 'shared/ui/Button';
 
 interface ErrorFallbackProps {
     className?: string;

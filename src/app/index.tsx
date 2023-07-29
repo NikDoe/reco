@@ -1,10 +1,10 @@
 import { Suspense } from 'react';
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from '@/shared/lib/classNames';
 import { useTheme } from './providers/ThemeProvider';
 import { AppRouter } from './providers/router';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
-import { LangSwitcher } from 'shared/ui/LangSwitcher';
-import { Header } from 'widgets/Header';
+import { ThemeSwitcher } from '@/shared/ui/ThemeSwitcher';
+import { LangSwitcher } from '@/shared/ui/LangSwitcher';
+import { Header } from '@/widgets/Header';
 
 import './styles/index.scss';
 

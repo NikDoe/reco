@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from '@/shared/lib/classNames';
+import { NewEntity } from '@/entities/newEntity';
 
 import styles from './AboutPage.module.scss';
 
@@ -12,7 +13,7 @@ const AboutPage = ({ className }: AboutPageProps) => {
 
     return (
         <div className={classNames(styles.AboutPage, {}, [className])}>
-            <h1>{t('Заголовок')}</h1>
+            <NewEntity />
         </div>
     );
 };

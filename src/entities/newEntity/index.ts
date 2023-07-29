@@ -1,0 +1,1 @@
+export { NewEntity } from './ui/newEntity';
